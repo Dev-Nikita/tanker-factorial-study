@@ -1,0 +1,3 @@
+Saturated 27-term tensor polynomial for P_peak_W: R2 = -inf, residual d.o.f. = 0. SATURATED INTERPOLATING MODEL - NOT THE PRIMARY INFERENTIAL MODEL. With 27 coefficients on 27 design points the residual error cannot be estimated and no significance statement may be derived from it.
+
+Saturated 27-term tensor polynomial for F_kch_peak_N: R2 = 1.000000, residual d.o.f. = 0. SATURATED INTERPOLATING MODEL - NOT THE PRIMARY INFERENTIAL MODEL. With 27 coefficients on 27 design points the residual error cannot be estimated and no significance statement may be derived from it.

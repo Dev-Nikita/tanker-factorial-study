@@ -1,0 +1,19 @@
+block,quantity,source_value,reproduced,abs_error,rel_error_pct,note,status
+Stage 1 integral quantities,"Engine work over stage 1, J",53370000.0,52300278.93706536,-1069721.062934637,-2.004349003062839,,OK (<=5 %)
+Stage 1 integral quantities,"Mean engine power, W",88950.0,87167.1315617756,-1782.8684382243955,-2.0043490030628393,,OK (<=5 %)
+Stage 1 integral quantities,"Mean wheel torque, N m",3835.0,3942.5046135381804,107.50461353818037,2.8032493751807137,,OK (<=5 %)
+Stage 1 integral quantities,"Distance travelled, m",7582.0,7501.103581660538,-80.89641833946189,-1.0669535523537574,,OK (<=5 %)
+Stage 1 integral quantities,"Mean speed, m/s",12.536,12.501839383549235,-0.03416061645076418,-0.2725001312281763,,OK (<=5 %)
+Stage 1 integral quantities,"Terminal speed, m/s",13.058,13.097563853257839,0.039563853257838844,0.30298555106324737,,OK (<=5 %)
+"Table 1 - peak wheel force F_kch, N","m_v = 1250 kg, rigid",39460.0,43792.4865059057,4332.486505905697,10.979438687039274,,ACCEPTABLE (<=15 %)
+"Table 1 - peak wheel force F_kch, N","m_v = 1250 kg, compliant",38530.0,39524.527780773,994.5277807730017,2.5811777336439183,,OK (<=5 %)
+"Table 1 - load reduction, %",m_v = 1250 kg,2.3568170299037,9.74586981846106,,,"percentage-point comparison, see manuscript Table 4",-
+"Table 1 - peak wheel force F_kch, N","m_v = 2500 kg, rigid",45470.0,45466.060614716844,-3.939385283156298,-0.008663701964276002,,OK (<=5 %)
+"Table 1 - peak wheel force F_kch, N","m_v = 2500 kg, compliant",41630.0,42905.33566686853,1275.33566686853,3.063501481788446,,OK (<=5 %)
+"Table 1 - load reduction, %",m_v = 2500 kg,8.445128656256873,5.632168068283084,,,"percentage-point comparison, see manuscript Table 4",-
+"Table 1 - peak wheel force F_kch, N","m_v = 3750 kg, rigid",50270.0,50739.26608592872,469.2660859287207,0.9334913187362656,,OK (<=5 %)
+"Table 1 - peak wheel force F_kch, N","m_v = 3750 kg, compliant",46220.0,44013.43838934446,-2206.561610655539,-4.77404069808641,,OK (<=5 %)
+"Table 1 - load reduction, %",m_v = 3750 kg,8.056494927392082,13.255666105209002,,,"percentage-point comparison, see manuscript Table 4",-
+"Table 1 - peak wheel force F_kch, N","m_v = 5000 kg, rigid",53750.0,52916.65546199309,-833.3445380069097,-1.550408442803553,,OK (<=5 %)
+"Table 1 - peak wheel force F_kch, N","m_v = 5000 kg, compliant",48770.0,47019.95425690422,-1750.045743095783,-3.5883652718798094,,OK (<=5 %)
+"Table 1 - load reduction, %",m_v = 5000 kg,9.265116279069767,11.143374715592383,,,"percentage-point comparison, see manuscript Table 4",-
