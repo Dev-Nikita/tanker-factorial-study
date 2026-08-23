@@ -1,0 +1,26 @@
+\begin{table}
+\caption{Model parameters and their provenance.}
+\label{tab:table01_parameters}
+\begin{tabular}{lllll}
+\toprule
+Symbol & Quantity & Value & Unit & Provenance \\
+\midrule
+m\_ch & tanker chassis mass & 5900 & kg & SRC-A \\
+m\_tr & tractor mass & 5040 & kg & identified (P-1) \\
+m\_k & movable trolley mass (each) & 700 & kg & SRC-A \\
+m\_v,max & liquid cargo at 100 \% fill (each tank) & 5000 & kg & SRC-A \\
+r\_k & dynamic wheel radius & 0.5376 & m & identified (P-2) \\
+I\_k & driveline inertia reduced to wheel axes & 4159 & kg m\textasciicircum 2 & identified (P-3) \\
+C\_kch & tangential wheel stiffness & 1.2e6 & N m/rad & SRC-A \\
+D\_kch & tangential wheel damping & 5478 & N m s/rad & added term, identified (P-4) \\
+C\_chv1 & chassis-unit 1 spring rate & 2.0e5 & N/m & SRC-A \\
+C\_v1v2 & unit 1-unit 2 spring rate & 1.5e5 & N/m & SRC-A \\
+alpha\_v1 & specific damping, chassis-unit 1 & 0.1 & N s m\textasciicircum -1 kg\textasciicircum -1 & SRC-A \\
+alpha\_v2 & specific damping, unit 1-unit 2 & 0.05 & N s m\textasciicircum -1 kg\textasciicircum -1 & SRC-A \\
+f\_d & road rolling-resistance coefficient & 0.03 & - & SRC-A \\
+f\_ch & guide resistance, unit 1 & 0.02 & - & SRC-A \\
+f\_k & guide resistance, unit 2 & 0.02 & - & SRC-A \\
+N\_d & wheel-referred plateau power & 9.23e+04 & W & SRC-A Fig. 4 \\
+\bottomrule
+\end{tabular}
+\end{table}

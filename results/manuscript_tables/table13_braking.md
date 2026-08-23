@@ -1,0 +1,6 @@
+**Braking stage: rigid versus compliant mounting over the 27 design points.**
+
+| configuration   |   braking_time_s_mean |   braking_time_s_std |   braking_distance_m_mean |   braking_distance_m_std |   mean_decel_m_s2_mean |   mean_decel_m_s2_std |   F_kch_peak_N_mean |   F_kch_peak_N_std |   a_peak_m_s2_mean |   a_peak_m_s2_std |   j_peak_m_s3_mean |   j_peak_m_s3_std |
+|:----------------|----------------------:|---------------------:|--------------------------:|-------------------------:|-----------------------:|----------------------:|--------------------:|-------------------:|-------------------:|------------------:|-------------------:|------------------:|
+| compliant       |                 25.84 |               0.4817 |                     191   |                    15.55 |                -0.5652 |               0.02433 |                5152 |              790.4 |             0.7007 |           0.05607 |              8.85  |            0.8036 |
+| rigid           |                 26.02 |               0.4536 |                     193.2 |                    15.06 |                -0.5613 |               0.02528 |                5153 |              790.3 |             0.5852 |           0.0133  |              6.455 |            0.2456 |

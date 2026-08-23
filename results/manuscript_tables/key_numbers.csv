@@ -1,0 +1,15 @@
+,value
+n_runs,27.0
+reduction_min_pct,5.023536717169789
+reduction_max_pct,15.104008545402833
+reduction_mean_pct,9.176710850052434
+F_rigid_min_kN,38.292642624602706
+F_rigid_max_kN,51.88702531303661
+F_comp_min_kN,35.76172142216488
+F_comp_max_kN,45.285906285046565
+a_peak_rigid_mean,2.3492342573045195
+a_peak_comp_mean,2.310587559595292
+j_peak_rigid_mean,21.741618397431452
+j_peak_comp_mean,31.55584238586513
+u1_peak_max_mm,86.39288248723349
+u2_peak_max_mm,75.74504362983619

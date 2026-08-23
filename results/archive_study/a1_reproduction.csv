@@ -1,0 +1,10 @@
+stage,quantity,published,archive_model,rel_error_pct
+stage 1 (acceleration),"Terminal speed, m/s",13.058,13.057565096136495,-0.003330554935711428
+stage 1 (acceleration),"Distance travelled, m",7582.0,7582.812881141414,0.010721196800506944
+stage 1 (acceleration),"Mean speed, m/s",12.536,12.638022377929447,0.8138351781225875
+stage 1 (acceleration),"Engine work, J",53370000.0,52763944.53965389,-1.135573281517913
+stage 1 (acceleration),"Mean power, W",88950.0,87939.90756608982,-1.1355732815179052
+stage 2 (braking),"Braking time, s",25.054,24.967483269757054,-0.3453210275522664
+stage 2 (braking),"Braking distance, m",163.575,163.59318397040533,0.011116595081978247
+stage 2 (braking),"Mean deceleration, m/s2",-0.521,-0.522982831511618,0.3805818640341522
+stage 2 (braking),"Peak wheel force, N",6800.0,6827.7602107593575,0.4082383935199633

@@ -1,0 +1,17 @@
+Symbol,Quantity,Value,Unit,Provenance
+m_ch,tanker chassis mass,5900.0,kg,SRC-A
+m_tr,tractor mass,5039.9,kg,identified (P-1)
+m_k,movable trolley mass (each),700.0,kg,SRC-A
+"m_v,max",liquid cargo at 100 % fill (each tank),5000.0,kg,SRC-A
+r_k,dynamic wheel radius,0.5376,m,identified (P-2)
+I_k,driveline inertia reduced to wheel axes,4158.6,kg m^2,identified (P-3)
+C_kch,tangential wheel stiffness,1.2e6,N m/rad,SRC-A
+D_kch,tangential wheel damping,5478.0,N m s/rad,"added term, identified (P-4)"
+C_chv1,chassis-unit 1 spring rate,2.0e5,N/m,SRC-A
+C_v1v2,unit 1-unit 2 spring rate,1.5e5,N/m,SRC-A
+alpha_v1,"specific damping, chassis-unit 1",0.1,N s m^-1 kg^-1,SRC-A
+alpha_v2,"specific damping, unit 1-unit 2",0.05,N s m^-1 kg^-1,SRC-A
+f_d,road rolling-resistance coefficient,0.03,-,SRC-A
+f_ch,"guide resistance, unit 1",0.02,-,SRC-A
+f_k,"guide resistance, unit 2",0.02,-,SRC-A
+N_d,wheel-referred plateau power,92300.0,W,SRC-A Fig. 4
