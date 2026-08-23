@@ -1,0 +1,54 @@
+# Vehicle / powertrain configuration.
+# Provenance codes:
+#   SRC-A  = "ЗНИЖЕННЯ ПОЗДОВЖНІХ ДИНАМІЧНИХ НАВАНТАЖЕНЬ автоцистерни.docx" (original manuscript)
+#   SRC-B  = "Повнофакторний експеримент 3х3=27.docx"
+#   SRC-C  = red_hnups,+13.pdf  (vehicle longitudinal dynamics / jerk)
+#   SRC-D  = "Посібник Теорія автомобіля. Лекції.pdf"
+#   INFER  = identified from reported SRC-A results (documented in docs/MISSING_INPUTS.md)
+#   PLACEHOLDER_NOT_FOR_PUBLICATION = provisional, must be replaced before submission
+
+chassis:
+  m_ch_kg: 5900.0          # SRC-A (m_ch = 5900)
+  provenance: SRC-A
+
+tractor:
+  m_tractor_kg: 5039.9     # INFER P-1 - identified, see scripts/00_identify_missing_parameters.py
+  provenance: INFER
+
+wheels:
+  r_k_m: 0.5376            # INFER P-2 - identified (stage-1 integrals of SRC-A)
+  I_k_kgm2: 3595.8         # INFER P-3 - identified (SRC-A Table 1 transients)
+  C_kch_N_per_rad: 1.2e6   # SRC-A (C_kch = 1200000) tangential wheel compliance
+  D_kch_Nms_per_rad: 6325.0  # INFER P-4 - tangential wheel damping, absent from SRC-A
+  provenance: INFER/SRC-A
+
+road:
+  f_d: 0.03                # SRC-A - rolling resistance coefficient (0.03...0.06 range)
+  f_d_range: [0.03, 0.06]  # SRC-A - paving stones / wet sand / packed snow
+  g: 9.81
+  provenance: SRC-A
+
+powertrain:
+  # Wheel-referred engine torque characteristic M_k(omega), digitised from SRC-A Fig. 4.
+  M0_Nm: 1.50e4            # torque at omega -> 0
+  omega_peak_rad_s: 2.6    # SRC-A: "ideal" region starts at 2.6 rad/s
+  M_peak_Nm: 3.55e4
+  omega_ideal_end_rad_s: 22.0   # SRC-A: ideal region 2.6-22 rad/s
+  omega_max_rad_s: 37.0
+  # Constant-power plateau N_d = M_peak * omega_peak  (SRC-A eq. 3: N_d = M_k*dphi/dt ~ const)
+  provenance: SRC-A Fig.4 + eq.(3)
+
+brakes:
+  # Total brake torque law, digitised from SRC-A Fig. 5
+  M_inf_Nm: 1750.0
+  M_drop_Nm: 1200.0
+  tau_s: 0.8
+  scale: 3.9652            # INFER P-5 - equivalent number of braked wheel sets;
+                           # identified from SRC-A braking time 25.054 s (distance error 1.7 %)
+  provenance: SRC-A Fig.5
+
+numerics:
+  method: Radau            # SRC-A used Mathcad RADAUS
+  rtol: 1.0e-8
+  atol: 1.0e-10
+  sign_smoothing_eps_m_s: 1.0e-3   # tanh regularisation of Coulomb sign()

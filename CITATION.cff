@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Longitudinal dynamics of a tank vehicle with compliant-damped cargo mounting: reproducible 3^3 factorial study"
+message: "If you use this software, please cite the accompanying article."
+type: software
+authors:
+  - family-names: Voitiuk
+    given-names: Yaroslav
+  - family-names: Zinko
+    given-names: Roman
+  - family-names: Tarasov
+    given-names: Nikita
+    email: 7nikitan@gmail.com
+  - family-names: Cherevko
+    given-names: Yurii
+license: MIT
+version: 1.0.0

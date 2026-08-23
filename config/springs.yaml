@@ -1,0 +1,23 @@
+# Compliant-damped coupling elements (chassis -> unit 1 -> unit 2).
+# All values from SRC-A unless stated otherwise.
+
+compliant:
+  C_chv1_N_per_m: 2.0e5    # SRC-A (C_chk = 200000)
+  C_v1v2_N_per_m: 1.5e5    # SRC-A (C_kv = 150000)
+  alpha_v1_Ns_per_m_per_kg: 0.10   # SRC-A (alpha_k = 0.1) specific damping, per unit cargo mass
+  alpha_v2_Ns_per_m_per_kg: 0.05   # SRC-A (alpha_v = 0.05)
+  f_ch: 0.02               # SRC-A - guide resistance, unit 1 along the frame
+  f_k: 0.02                # SRC-A - guide resistance, unit 2 along unit 1
+  travel_limit_m: 0.25     # PLACEHOLDER_NOT_FOR_PUBLICATION - allowable longitudinal travel
+  provenance: SRC-A
+
+rigid:
+  # Rigid baseline: units are locked to the chassis.
+  # Implemented as a single lumped mass, not as a stiff spring (see docs/EQUATION_TRACEABILITY.md).
+  provenance: SRC-A eq.(2)
+
+# Ranges explored in SRC-A, retained for the sensitivity / uncertainty layer
+ranges:
+  C_N_per_m: [1.5e5, 1.2e6]
+  alpha_Ns_per_m_per_kg: [0.0, 0.5]
+  f_guide: [0.02, 0.40]

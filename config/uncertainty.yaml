@@ -1,0 +1,42 @@
+# Uncertainty bands for Monte-Carlo propagation.
+#
+# These are ENGINEERING TOLERANCES, not measured values.  Each entry states its
+# justification.  Replace with measured tolerances before submission if better
+# information becomes available (see docs/MISSING_INPUTS.md, M-05).
+
+seed: 42
+n_samples: 400
+
+parameters:
+  springs/compliant.C_chv1_N_per_m:
+    dist: normal
+    rel_sd: 0.05          # ISO 2162 class-2 helical spring rate tolerance ~ +/-5 %
+    justification: "commercial coil-spring rate tolerance"
+  springs/compliant.C_v1v2_N_per_m:
+    dist: normal
+    rel_sd: 0.05
+    justification: "commercial coil-spring rate tolerance"
+  springs/compliant.alpha_v1_Ns_per_m_per_kg:
+    dist: normal
+    rel_sd: 0.15          # damper units are typically specified to +/-15 %
+    justification: "hydraulic damper force tolerance"
+  springs/compliant.alpha_v2_Ns_per_m_per_kg:
+    dist: normal
+    rel_sd: 0.15
+    justification: "hydraulic damper force tolerance"
+  springs/compliant.f_ch:
+    dist: uniform
+    rel_halfwidth: 0.40   # SRC-A explores f = 0.02...0.40 depending on guide condition
+    justification: "guide condition (lubricated / dry / contaminated), SRC-A"
+  springs/compliant.f_k:
+    dist: uniform
+    rel_halfwidth: 0.40
+    justification: "guide condition, SRC-A"
+  vehicle/road.f_d:
+    dist: uniform
+    rel_halfwidth: 0.33   # SRC-A road range 0.03...0.06 about the nominal 0.03...0.045
+    justification: "road surface variability (paving stones / wet sand / packed snow), SRC-A"
+  tanks/liquid.density_kg_m3:
+    dist: normal
+    rel_sd: 0.01
+    justification: "liquid temperature and composition"

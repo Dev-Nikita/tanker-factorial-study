@@ -1,0 +1,26 @@
+# Movable cargo units (trolley + tank + liquid).
+# Two configurations are supported:
+#   full_scale : the tank semitrailer of SRC-A (primary study)
+#   rig_scale  : the instrumented two-tank test rig of SRC-B (scaled validation platform)
+
+liquid:
+  type: water
+  density_kg_m3: 1000.0
+  provenance: "SRC-B does not name the liquid; water assumed (user-confirmed)."
+
+full_scale:
+  n_units: 2
+  m_trolley_kg: 700.0        # SRC-A (m_k = 700)
+  m_tank_dry_kg: 0.0         # absorbed into m_trolley for the full-scale model
+  m_liquid_full_kg: 5000.0   # SRC-A cargo mass range 1250...5000 kg -> 100 % fill = 5000 kg
+  provenance: SRC-A
+
+rig_scale:
+  n_units: 2
+  m_trolley_kg: 15.0         # PLACEHOLDER_NOT_FOR_PUBLICATION - roller carriage mass
+  m_tank_dry_kg: 25.0        # PLACEHOLDER_NOT_FOR_PUBLICATION - dry 50 L steel tank
+  tank_volume_m3: 0.05       # SRC-B (50 L)
+  tank_diameter_m: 0.370     # SRC-B
+  tank_length_m: 0.500       # SRC-B
+  m_liquid_full_kg: 50.0     # = rho * V
+  provenance: SRC-B (geometry) + PLACEHOLDER (masses)
